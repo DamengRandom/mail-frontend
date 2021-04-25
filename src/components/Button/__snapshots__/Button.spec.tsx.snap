@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> test snapshot test for Button component 1`] = `
+<button
+  class="sc-bdvvaa flvFCZ"
+  type="button"
+>
+  test text
+</button>
+`;

@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+# Mail Service (Front-end)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is mainly focused on sending emails by using different mail service providers (eg: `sendgrid`). This codebase is front-end UI which shows the form to allow user to type and send emails.
 
-## Available Scripts
 
-In the project directory, you can run:
+### How to run it locally
 
-### `yarn start`
+```js
+// install npm packages and start front-end codebase locally
+yarn && yarn start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+// run test locally
+yarn run test
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+### Major functionalities
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Using React hook form (form fields) + Yup (validation) + Styled components (CSS) for creating a mail form
+2. Support responsive display (tested)
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Improvements
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Add context API for displaying emails records which is after clicked 'Submit' button
+2. Refactor `EmailForm.tsx` component file, make it shorter
+3. Add unit test coverage functionality 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### Resources:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. https://github.com/JedWatson/react-select
+2. https://react-select.com/home
+3. https://react-select.com/creatable
+4. https://stackoverflow.com/questions/62059408/reactjs-and-typescript-refers-to-a-value-but-is-being-used-as-a-type-here-ts
+5. https://stackoverflow.com/questions/56577201/why-is-isolatedmodules-error-fixed-by-any-import/56577324
+6. https://www.npmjs.com/package/jest-fetch-mock
