@@ -35,7 +35,7 @@ export type tMultiSelectInput = {
 };
 
 export default function EmailForm() {
-  const { control, handleSubmit, formState:{ errors } } = useForm({
+  const { control, handleSubmit, formState:{ errors }, reset } = useForm({
     resolver: yupResolver(validationSchema),
   });
   const [loader, setLoader] = useState(false);
@@ -66,6 +66,15 @@ export default function EmailForm() {
           });
       });
     }
+
+    reset({
+      provider: [],
+      to: [],
+      cc: [],
+      bcc: [],
+      subject: '',
+      html: '',
+    }); // reset form
   };
 
   return (

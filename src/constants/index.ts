@@ -6,6 +6,8 @@ const testProviderList = [
 const testEmailList = [
   { value: 'damonmaozewu@gmail.com', label: 'damonmaozewu@gmail.com' },
   { value: '1h0f1.aus@gmail.com', label: '1h0f1.aus@gmail.com' },
+  { value: 'Luke.Hoggett@coatesgroup.com', label: 'Luke.Hoggett@coatesgroup.com' },
+  { value: 'gabi.triani@coatesgroup.com', label: 'gabi.triani@coatesgroup.com' },
 ];
 
 const multiSelectFields = [

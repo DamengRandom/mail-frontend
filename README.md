@@ -1,4 +1,4 @@
-# Mail Service (Front-end)
+# Mail Service (Frontend)
 
 This project is mainly focused on sending emails by using different mail service providers (eg: `sendgrid`). This codebase is front-end UI which shows the form to allow user to type and send emails.
 
